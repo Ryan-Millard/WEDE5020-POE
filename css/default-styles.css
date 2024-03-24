@@ -1,0 +1,22 @@
+body {
+	background-color: #010101;
+	padding: 0;
+	margin: 0;
+	color: #BBBBBB;
+}
+
+.multi-elements-per-line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+@media screen and (min-width: 450px) {
+	.multi-elements-per-line * {
+		margin: 0 5px;
+	}
+}
+
+.hotlines-wrapper h2 {
+	text-align: center;
+	margin: 0;
+}
