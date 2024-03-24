@@ -5,6 +5,10 @@ body {
 	color: #BBBBBB;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
 .multi-elements-per-line {
 	display: flex;
 	flex-wrap: wrap;
@@ -14,9 +18,4 @@ body {
 	.multi-elements-per-line * {
 		margin: 0 5px;
 	}
-}
-
-.hotlines-wrapper h2 {
-	text-align: center;
-	margin: 0;
 }
