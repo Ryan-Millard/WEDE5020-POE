@@ -136,6 +136,7 @@
 	}
 
 	.business-card-front-footer {
+		color: #FAA61A;
 		font-size: 85%;
 	}
 }
@@ -172,8 +173,10 @@
 }
 #right-business-card-front-body {
 	overflow: hidden;
-
 	padding-right: 0;
+}
+#right-business-card-front-body ul {
+	padding-bottom: 13px;
 }
 #left-business-card-front-body {
 	overflow: hidden;
@@ -198,7 +201,10 @@
 }
 
 .business-card-front-contact-details ul {
+	margin: 0;
 	list-style-type: none;
 	padding: 0;
-	padding-left: 5%;
+}
+.business-card-front-contact-details ul {
+	margin: 0;
 }
