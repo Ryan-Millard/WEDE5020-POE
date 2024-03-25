@@ -1,4 +1,8 @@
+/* This stylesheet is loosely based on the following tutorial: */
+/* Reference: Coding Ninja. (2023) HTML and CSS Flip Card Effect Tutorial | Interactive Card Animation. YouTube. Available at: https://www.youtube.com/watch?v=QON4dFDzsiE (Accessed: 25 March 2024) */
+
 .forty-second-precinct-security-business-card {
+	height: fit-content;
 	border-radius: 15px;
 	background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.2) 0%, black 100%);
 	padding: 0.5%;
@@ -136,6 +140,7 @@
 	}
 
 	.business-card-front-footer {
+		color: #FAA61A;
 		font-size: 85%;
 	}
 }
@@ -167,13 +172,13 @@
 	color: #FAA61A;
 	flex: 1;
 	padding: 2.5%;
-
-	p { font-weight: bold; }
 }
 #right-business-card-front-body {
 	overflow: hidden;
-
 	padding-right: 0;
+}
+#right-business-card-front-body ul {
+	padding-bottom: 13px;
 }
 #left-business-card-front-body {
 	overflow: hidden;
@@ -196,9 +201,16 @@
 .business-card-front-title * {
 	margin: 0;
 }
+.business-card-front-title #subtitle {
+	padding-top: 2px;
+	font-size: 80%;
+}
 
 .business-card-front-contact-details ul {
+	margin: 0;
 	list-style-type: none;
 	padding: 0;
-	padding-left: 5%;
+}
+.business-card-front-contact-details ul {
+	margin: 0;
 }
