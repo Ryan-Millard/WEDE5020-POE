@@ -17,12 +17,6 @@
 	text-decoration: none;
 }
 
-.navbar-logo {
-	cursor: pointer;
-	max-height: 12dvh;
-	order: 1;
-	margin: 0;
-}
 .nav__links-wrapper {
 	order: 3;
 }

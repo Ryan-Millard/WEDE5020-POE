@@ -59,3 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hotlines-wrapper > * {
 }
+
+.small-logo {
+	cursor: pointer;
+	max-height: 12dvh;
+	order: 1;
+	margin: 0;
+}
