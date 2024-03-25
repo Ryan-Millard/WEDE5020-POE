@@ -1,3 +1,6 @@
+* {
+}
+
 body {
 	background-color: #010101;
 	padding: 0;
@@ -6,8 +9,15 @@ body {
 }
 
 hr {
-    margin: 0 10px;
-    margin-top: 15px;
+    margin: 15px 10px;
+}
+
+summary {
+	border-radius: 5px;
+	padding-left: 20px;
+	background-color: rgba(250, 166, 26, 0.7);
+	max-width: calc(100% - 10px);
+	margin: 0 10px;
 }
 
 article p {
@@ -15,7 +25,8 @@ article p {
 	color: #131313;
 	font-weight: bold;
 	padding: 5px;
-	margin: 5px;
+	margin: 10px;
+	border-radius: 5px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,4 +46,16 @@ h1, h2, h3, h4, h5, h6 {
 	.multi-elements-per-line:after {
 		margin: 0 5px;
 	}
+}
+
+.hotlines-wrapper {
+	background-color: #FAA61A;
+	margin: 2.5%;
+	border-radius: 16px;
+	color: #010101;
+}
+.hotlines-wrapper ul {
+	padding-left: 10%;
+}
+.hotlines-wrapper > * {
 }
