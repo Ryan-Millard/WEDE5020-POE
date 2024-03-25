@@ -14,10 +14,14 @@
 		<!-- Google Fonts -->
 
 		<!-- Custom Styles -->
-		<link rel="stylesheet" href="css/default-styles.css">
-		<link rel="stylesheet" href="css/business-card-flip.css">
-		<link rel="stylesheet" href="css/navbar.css">
-		<link rel="stylesheet" href="css/footer.css">
+		<link type="text/css" rel="stylesheet" href="css/default-styles.css">
+		<link type="text/css" rel="stylesheet" href="css/business-card-flip.css">
+		<link type="text/css" rel="stylesheet" href="css/navbar.css">
+		<link type="text/css" rel="stylesheet" href="css/footer.css">
+
+			<!-- Specific to this page -->
+			<link type="text/css" rel="stylesheet" href="css/home.css">
+			<!-- Specific to this page -->
 		<!-- Custom Styles -->
 
 	</head>
@@ -25,7 +29,7 @@
 
 		<!-- Navbar -->
 		<header class="navbar-wrapper">
-			<img class="small-logo" src="resources/42nd-precinct-logo.png" alt="logo">
+			<a href="home.html"><img class="small-logo" src="resources/42nd-precinct-logo.png" alt="logo"></a>
 			<nav class="nav__links-wrapper">
 				<ul class="nav__links">
 					<li><a href="about.html">About</a></li>
@@ -33,22 +37,20 @@
 					<li><a href="employment-opportunities.html">Employment Opportunities</a></li>
 				</ul>
 			</nav>
-			<a class="navbar-contact" href="contact.html"><button>Contact</button></a>
+			<a class="navbar-contact" href="contact.html"><button class="clickable">Contact</button></a>
 		</header>
 		<!-- Navbar -->
 
 		<!-- Introduction -->
-		<article>
-			<h1>Honesty, Integrity & Trust</h1>
-			<p>
-			Based in Ferndale, Johannesburg, 42nd Precinct Security offers security 
-			solutions in and around Gauteng. Our main clients consist of various schools, 
-			shopping centres, townhouse and building complexes, as well as buildings 
-			and office blocks. We provide security solutions in many forms, ranging from 
-			response officers to intrustion detection systems that can be remotely 
-			managed using a mobile app.
+			<h1 class="roboto-black-italic">Honesty, Integrity & Trust</h1>
+			<p id="intro">
+				Based in Ferndale, Johannesburg, 42nd Precinct Security offers security 
+				solutions in and around Gauteng. Our main clients consist of various schools, 
+				shopping centres, townhouse and building complexes, as well as buildings 
+				and office blocks. We provide security solutions in many forms, ranging from 
+				response officers to intrustion detection systems that can be remotely 
+				managed using a mobile app.
 			</p>
-		</article>
 		<!-- Introduction -->
 
 		<hr>
@@ -130,12 +132,17 @@
 			<div class="hotlines-wrapper">
 				<h2>Hotlines</h2>
 				<ul>
-					<li><a href="tel:10111">Police (SAPS): 10111</a></li>
-					<li><a href="tel:+27117916340">42nd Precinct Security Control Room: +27 11 791 6340</a></li>
-					<li><a href="tel:084124">Netcare ER-24: 084 124</a></li>
-					<li><a href="tel:10177">Fire Brigade: 10177</a></li>
-					<li><a href="tel:10177">Ambulance: 10177</a></li>
-					<li class="roboto-bold"><a href="https://wikisouthafrica.co.za/emergency-numbers-in-south-africa/">Full List of Emergency Numbers</a></li>
+					<li><a href="tel:+27117916340">42nd Control Room: <u>+27117916340</u></a></li>
+					<li><a href="tel:+27117916340">42nd Control Room: <u>+27117916340</u></a></li>
+				</ul>
+				<hr>
+				<h2>Emergency Numbers</h2>
+				<ul>
+					<li><a href="tel:10111">Police (SAPS): <u>10111</u></a></li>
+					<li><a href="tel:084124">Netcare ER-24: <u>084 124</u></a></li>
+					<li><a href="tel:10177">Fire Brigade: <u>10177</u></a></li>
+					<li><a href="tel:10177">Ambulance: <u>10177</u></a></li>
+					<li class="roboto-bold"><a href="https://wikisouthafrica.co.za/emergency-numbers-in-south-africa/">More...</a></li>
 				</ul>
 			</div>
 			<!-- Hotlines -->
@@ -148,35 +155,58 @@
 
 		<!-- Mission Statement -->
 		<details>
-			<summary>Mission Statement</summary>
+			<summary class="clickable">Mission Statement</summary>
 			<article>
-				<p>
 				Be it day or night, 42nd Precinct Security has maintained the safety of their clients for 
 				over 20 years. With such experience comes a set of guarantees, some of which are 
 				reliability, structure, excellent relatinships with the authorities, and a well-established 
 				and respected name in the security sector.
-				</p>
 			</article>
 		</details>
 		<!-- Mission Statement -->
 
-	<div class="footer-wrapper">
-			<ul class="footer-links">
-				<li><a href="">Instagram</a></li>
-				<li><a href="">Facebook</a></li>
-				<hr>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
+		<div class="multi-elements-per-line ">
+			<details>
+				<summary class="clickable">Armed Response & Reaction</summary>
+				<article>
+					Armed Response, 24 hr trained Security Officers (dayshift and / or nightshift) 
+					on a permanent or temp basis, uniformed or plain clothed officers available in 
+					residential, commercial environment.
+				</article>
+			</details>
 
-			<img class="small-logo" src="resources/42nd-precinct-logo.png" alt="logo">
+			<details>
+				<summary class="clickable"></summary>
+				<article>
+				</article>
+			</details>
 
-			<ul class="footer-links">
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="products-and-services.html">Products & Services</a></li>
-				<hr>
-				<li><a href="employment-opportunities.html">Employment Opportunities</a></li>
-			</ul>
-	</div>
+			<details>
+				<summary class="clickable"></summary>
+				<article>
+				</article>
+			</details>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-wrapper">
+				<ul class="footer-links">
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Facebook</a></li>
+					<hr>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<a href="home.html"><img class="small-logo" src="resources/42nd-precinct-logo.png" alt="logo"></a>
+				<ul class="footer-links">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="products-and-services.html">Products & Services</a></li>
+					<hr>
+					<li><a href="employment-opportunities.html">Employment Opportunities</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- Footer -->
 
 	</body>
 </html>
