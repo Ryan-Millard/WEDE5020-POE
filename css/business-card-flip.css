@@ -1,3 +1,6 @@
+/* This stylesheet is loosely based on the following tutorial: */
+/* Reference: Coding Ninja. (2023) HTML and CSS Flip Card Effect Tutorial | Interactive Card Animation. YouTube. Available at: https://www.youtube.com/watch?v=QON4dFDzsiE (Accessed: 25 March 2024) */
+
 .forty-second-precinct-security-business-card {
 	height: fit-content;
 	border-radius: 15px;

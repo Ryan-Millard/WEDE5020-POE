@@ -1,0 +1,12 @@
+.footer-wrapper {
+	width: 100%;
+	padding: 3px;
+	margin: 0;
+	background: linear-gradient(to top, rgba(0,0,0,0) 70%, #010101), url("../resources/card-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 1.5%;
+}
