@@ -7,6 +7,7 @@
 	background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.2) 0%, black 100%);
 	padding: 0.5%;
 	min-width: 100%;
+	margin: auto 0;
 }
 @media screen and (min-width: 601px) {
 	.forty-second-precinct-security-business-card {
@@ -60,6 +61,7 @@
 }
 
 .card-container:hover .card, .card-container:active .card {
+	cursor: pointer;
 	transform: rotateY(180deg);
 }
 

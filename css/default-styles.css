@@ -1,4 +1,10 @@
-* {
+::selection {
+	background: #333333;
+	color: #FAA61A;
+}
+::-moz-selection {
+	background: #333333;
+	color: #FAA61A;
 }
 
 body {
@@ -12,12 +18,16 @@ hr {
 	margin: 15px 10px;
 }
 
+details {
+	margin-bottom: 10px;
+}
 summary {
 	border-radius: 5px;
 	padding-left: 20px;
-	background-color: rgba(250, 166, 26, 0.7);
 	max-width: calc(100% - 10px);
 	margin: 0 10px;
+	text-align: center;
+	padding: 1% 0;
 }
 
 a {
@@ -55,21 +65,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .hotlines-wrapper {
 	background-color: #FAA61A;
-	margin: 2.5%;
+	margin: 1.25% 0;
 	border-radius: 16px;
 	color: #010101;
+	padding: 1% 0;
+	min-width: 300px;
+	max-width: 300px;
+	width: 30%;
 
+	hr { border-color: #010101; }
+	h2 { margin: 0; }
 	ul {
+		margin: 0;
 		padding-left: 10%;
 		li {
-			a {
-				color: black;
+			a { color: #010101; }
+			a:hover {
+				border-radius: 5px;
+				color: #ECF0F1;
+				background-color: rgba(0,0,0, 0.3);
 			}
-		a:hover {
-			border-radius: 5px;
-			color: #ECF0F1;
-			background-color: rgba(0,0,0, 0.3);
-		}
 		}
 	}
 }
@@ -78,4 +93,26 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 	max-height: 12dvh;
 	margin: 0;
+}
+
+.clickable {
+	background-color: rgba(250, 166, 26, 0.5);
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.clickable:hover, .clickable:active {
+	background-color: rgba(250, 166, 26, 0.8);
+	color: #131313;
+}
+
+svg {
+	fill: #ecf0f1;
+	transition: all 0.3s ease 0s;
+	max-height: 38.4px;
+	border-radius: 45px;
+	max-width: fit-content;
+}
+svg:hover, svg:active {
+	fill: #faa61a;
 }
