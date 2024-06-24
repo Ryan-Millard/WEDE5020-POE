@@ -242,75 +242,75 @@ svg:hover, svg:active { fill: #faa61a; }
 /* FONT STYLES */
 
 .roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: normal;
 }
 
 .roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
 }
 
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 .roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: normal;
 }
 
 .roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+	font-style: italic;
 }
 
 .roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 
 .roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: italic;
 }
 
 .roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: italic;
 }
 
 .roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-style: italic;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -639,6 +639,41 @@ svg:hover, svg:active { fill: #faa61a; }
 	margin-left: 10px;
 	padding: 0 25px;
 	border-radius: 50px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* CONTACT PAGE FORM STYLES */
+
+.contact-form {
+	max-width: 500px;
+	margin: auto;
+
+	button {
+		font-size: 16px;
+	}
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+.form-group select, .form-group textarea, .form-group input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.form-group select:invalid, .form-group textarea:invalid, .form-group input[type="text"]:invalid {
+	background-color: #ffcccc; /* Red background for invalid fields */
+}
+.form-group select:valid, .form-group textarea:valid, .form-group input[type="text"]:valid {
+	background-color: #ccffcc; /* Green background for valid fields */
+}
+.error {
+	color: red;
+	display: none;
 }
 
 /* ------------------------------------------------------------------------------- */

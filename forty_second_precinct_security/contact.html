@@ -170,10 +170,36 @@
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4819153042113!2d27.97832237475544!3d-26.083182977151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574f85e01d351%3A0x87ed84fda25a6c41!2s42nd%20Precinct%20Security!5e0!3m2!1sen!2sza!4v1711624806327!5m2!1sen!2sza" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 
+			<br>
+
 			<hr>
 
-			<h1>Suggestions</h1>
-			<p class="centered">Google Form to accept suggestions on the website</p>
+			<div class="contact-form">
+				<h1>Contact Us</h1>
+				<form id="contactForm">
+					<div class="form-group">
+						<label for="emailSelect">Recipient (choose one):</label>
+						<select id="emailSelect" name="emailSelect" required>
+							<option value="">Select a department to email</option>
+							<option value="info@42ndprecinct.co.za">General Information</option>
+							<option value="sales@42ndprecinct.co.za">Sales Queries</option>
+							<option value="jobs@42ndprecinct.co.za">Job Opportunities</option>
+						</select>
+						<div class="error" id="emailSelectError">Please select an email address.</div>
+					</div>
+					<div class="form-group">
+						<label for="subject">Subject (required):</label>
+						<input type="text" id="subject" name="subject" required>
+					</div>
+					<div class="form-group">
+						<label for="message">Message (required):</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					<button class="clickable roboto-medium" type="submit">Submit</button>
+				</form>
+			</div>
+
+			<br>
 
 		</main>
 		<!-- More Information -->
@@ -216,5 +242,58 @@
 		</footer>
 		<!-- Footer -->
 
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var form = document.getElementById('contactForm');
+		var fields = form.querySelectorAll('input, textarea, select');
+
+		// Clear initial values on focus
+		fields.forEach(function(field) {
+			field.addEventListener('focus', function() {
+				if (field.tagName !== 'SELECT') {
+					field.value = '';
+				}
+			});
+		});
+
+		// Form validation on submit
+		form.addEventListener('submit', function(event) {
+			event.preventDefault(); // Prevent default form submission
+			var valid = true;
+
+			fields.forEach(function(field) {
+				if (!field.checkValidity()) {
+					valid = false;
+				}
+			});
+
+			if (!valid) {
+				alert('Please fill in all the required fields.');
+			} else {
+				var emailSelect = document.getElementById('emailSelect');
+				var selectedEmail = emailSelect.value;
+				var subject = document.getElementById('subject').value;
+				var message = document.getElementById('message').value;
+
+				// Construct the mailto URL
+				var mailtoLink = `mailto:${selectedEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+				// Open the mail client
+				window.location.href = mailtoLink;
+			}
+		});
+
+		// Real-time validation
+		fields.forEach(function(field) {
+			field.addEventListener('input', function() {
+				if (field.checkValidity()) {
+					field.style.backgroundColor = '#ccffcc'; // Green for valid
+				} else {
+					field.style.backgroundColor = '#ffcccc'; // Red for invalid
+				}
+			});
+		});
+	});
+</script>
 	</body>
 </html>
