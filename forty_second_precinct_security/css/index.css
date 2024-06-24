@@ -1,0 +1,39 @@
+#intro { text-align: center; }
+#intro .content {
+	display: inline-block;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: auto 10%;
+	margin-bottom: 2%;
+}
+
+.content ol {
+	counter-reset: item;
+	list-style-type: none;
+	padding-left: 0;
+}
+.content ol li {
+	margin-bottom: 0.5em;
+}
+.content ol li.heading {
+	font-weight: bold;
+	text-align: left;
+	list-style: none;
+	counter-reset: none;
+	margin-bottom: 0.5em;
+}
+.content ol li:not(.heading):before {
+	counter-increment: item;
+	content: counter(item) ". ";
+	font-weight: bold;
+}
+
+#gate-motor-img {
+	max-height: 50dvh;
+	margin: auto 20px;
+}
+@media screen and (max-width: 990px) {
+	#gate-motor-img {
+		margin-top: 10px;
+	}
+}

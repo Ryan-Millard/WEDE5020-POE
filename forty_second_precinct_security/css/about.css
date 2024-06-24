@@ -1,0 +1,56 @@
+.display-on-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 759px) {
+	#three-images-container #officer-img { display: none; }
+
+	.display-on-mobile { display: block; }
+}
+@media screen and (max-width: 500px) {
+	#detailed-history > article {
+		display: block;
+
+		aside { display: none; }
+
+		ol {
+			min-width: 80%;
+			margin: 0 10%;
+			padding: 0;
+		}
+	}
+}
+
+#detailed-history > article {
+	display: flex;
+
+	ol { max-width: 70%; }
+
+	aside {
+		max-height: 100%;
+		max-width: 30%;
+		margin-top: 2.5%;
+
+		img {
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+@media screen and (min-width: 925px) { #security-officers-rand-park-high { display: none; } }
+@media screen and (min-width: 980px) { #security-officer-boundary-gate { display: none; } }
+@media screen and (min-width: 1025px) { #security-guards { display: none; } }
+@media screen and (min-width: 1130px) { #response-reaction { display: none; } }
+@media screen and (min-width: 1232px) {
+	#security-officers-rand-park-high,
+	#security-officer-boundary-gate,
+	#security-guards,
+	#response-reaction {
+		display: block !important;
+	}
+
+	#detailed-history aside { grid-template-columns: repeat(2, 1fr); /* Two columns layout */ }
+}
+@media screen and (min-width: 1830px) {
+	#detailed-history aside { grid-template-columns: repeat(3, 1fr); /* Three columns layout */ }
+}

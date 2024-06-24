@@ -1,0 +1,218 @@
+/* This stylesheet is loosely based on the following tutorial: */
+/* Reference: Coding Ninja. (2023) HTML and CSS Flip Card Effect Tutorial | Interactive Card Animation. YouTube. Available at: https://www.youtube.com/watch?v=QON4dFDzsiE (Accessed: 25 March 2024) */
+
+.forty-second-precinct-security-business-card {
+	height: fit-content;
+	border-radius: 15px;
+	background: radial-gradient(ellipse at center, rgba(127, 127, 127, 0.2) 0%, black 100%);
+	padding: 0.5%;
+	min-width: 100%;
+	margin: auto 0;
+}
+@media screen and (min-width: 601px) {
+	.forty-second-precinct-security-business-card {
+		min-width: fit-content;
+		max-width: fit-content;
+		display: inline-block;
+	}
+}
+.forty-second-precinct-security-business-card h3 {
+	margin: 0;
+	text-align: center;
+	color: #FAA61A;
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.card-container {
+	width: fit-content;
+	margin: 0 auto;
+	perspective: 1000px;
+}
+
+.card {
+	position: relative;
+	max-width: 360px;
+	max-height: calc(360px * 5 / 9); /* This maintains a 9:5 width:height ratio */
+	width: 400px;
+	height: 600px;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+}
+
+.front, .back {
+	position: absolute;
+	border-radius: 8px;
+	backface-visibility: hidden;
+}
+
+.front {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotateY(0deg);
+}
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotateY(180deg);
+	min-width: 100%;
+}
+
+.card-container:hover .card, .card-container:active .card {
+	cursor: pointer;
+	transform: rotateY(180deg);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+.business-card-back-wrapper {
+	max-height: 193px;
+	background: black;
+	font-family: Arial;
+}
+
+@media (min-width: 601px) {
+	.business-card-back-wrapper {
+		max-width: 360px;
+		height: calc(360px * 5 / 9); /* This maintains a 9:5 width:height ratio */
+	}
+}
+
+@media (max-width: 600px) {
+	.business-card-back-wrapper {
+		max-width: 100%;
+		max-height: calc(100% * 5 / 9); /* This maintains a 9:5 width:height ratio */
+	}
+}
+
+
+
+.business-card-back-wrapper p {
+	color: #FAA61A;
+	text-align: center;
+	font-size: 70%;
+}
+
+#business-card-back-content {
+	font-size: 70%;
+	background-color: #FAA61A;
+	color: black;
+	display: flex;
+	justify-content: flex-start;
+	padding: 2% 20px;
+}
+#business-card-back-content ul {
+	padding: 0;
+	padding-left: 5%;
+	margin: 0;
+}
+
+.business-card-back-spacer {
+	height: 0.6rem;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- */
+
+.business-card-front-wrapper {
+	font-family: Arial;
+	font-size: 85%;
+	background-image: url("../resources/card-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+@media (min-width: 601px) {
+	.business-card-front-wrapper {
+		max-width: 360px;
+		max-height: calc(360 * 5 / 9); /* This maintains a 9:5 width:height ratio */
+	}
+
+	.business-card-front-contact-details {
+		color: white;
+		font-size: 80%;
+	}
+
+	.business-card-front-footer {
+		color: #FAA61A;
+		font-size: 85%;
+	}
+}
+
+@media (max-width: 600px) {
+	.business-card-front-wrapper {
+		max-width: 100%;
+		max-height: calc(100% * 5 / 9); /* This maintains a 9:5 width:height ratio */
+	}
+
+	.business-card-front-contact-details {
+		color: white;
+		font-size: 80%;
+		height: 50%;
+	}
+
+	.business-card-front-footer {
+		font-size: 83%;
+		margin-top: 5%;
+	}
+}
+
+
+
+
+.business-card-front-body {
+	padding 0; margin: 0;
+	width: 50%;
+	color: #FAA61A;
+	flex: 1;
+	padding: 2.5%;
+}
+#right-business-card-front-body {
+	overflow: hidden;
+	padding-right: 0;
+}
+#right-business-card-front-body ul {
+	padding-bottom: 13px;
+}
+#left-business-card-front-body {
+	overflow: hidden;
+}
+
+.business-card-front-logo {
+	width: 80%;
+	margin-bottom: 5%;
+}
+
+.business-card-front-title {
+	margin-top: 2%;
+	background: #FAA61A;
+	color: black;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	line-height: 0.9;
+	padding: 3%;
+}
+.business-card-front-title * {
+	margin: 0;
+}
+.business-card-front-title #subtitle {
+	padding-top: 2px;
+	font-size: 80%;
+}
+
+.business-card-front-contact-details ul {
+	margin: 0;
+	list-style-type: none;
+	padding: 0;
+}
+.business-card-front-contact-details ul {
+	margin: 0;
+}
