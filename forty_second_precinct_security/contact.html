@@ -2,9 +2,53 @@
 <html lang="en">
 	<head>
 
+		<!-- Meta Tags -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contact Us | 42nd Precinct Security</title>
+		<meta name="description" content="HIT - Honesty, Integrity, and Trust. The vertices of security. Based in Ferndale, 42nd Precinct Security has protected their community since the 90s.">
+		<meta name="keywords" content="security services, Ferndale, Randburg, Johannesburg, Gauteng, 42nd Precinct Security, safety, protection">
+		<meta name="author" content="42nd Precinct Security">
+		<!-- Meta Tags -->
+
+		<!-- Title -->
+		<title>Home | 42nd Precinct Security</title>
+		<!-- Title -->
+
+		<!-- Open Graph Meta Tags for Social Media -->
+		<meta property="og:title" content="42nd Precinct Security - Leading Security Services in Johannesburg">
+		<meta property="og:description" content="42nd Precinct Security provides top-notch security services in Johannesburg, ensuring safety and peace of mind for businesses and residential areas.">
+		<meta property="og:image" content="https://www.42ndprecinct.co.za/images/42logo.jpg">
+		<meta property="og:url" content="https://www.42ndprecinct.co.za/">
+		<meta property="og:type" content="website">
+		<!-- Open Graph Meta Tags for Social Media -->
+
+		<!-- Favicons -->
+		<link rel="icon" href="resources/42nd-precinct-logo.png" type="image/x-icon">
+		<!-- Favicons -->
+
+		<!-- Robots Meta Tag -->
+		<meta name="robots" content="index, follow">
+
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"name": "42nd Precinct Security",
+				"url": "https://www.42ndprecinct.co.za/",
+				"logo": "https://www.42ndprecinct.co.za/images/42logo.jpg",
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"telephone": "+27-11-791-6340",
+					"contactType": "Customer Service"
+				},
+				"sameAs": [
+					"https://www.facebook.com/42ndPrecinct",
+					"https://www.twitter.com/42ndPrecinct",
+					"https://www.linkedin.com/company/42nd-precinct-security"
+				]
+			}
+		</script>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -228,7 +272,19 @@
 
 			<h1>Find Us</h1>
 			<div class="center-div">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4819153042113!2d27.97832237475544!3d-26.083182977151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574f85e01d351%3A0x87ed84fda25a6c41!2s42nd%20Precinct%20Security!5e0!3m2!1sen!2sza!4v1711624806327!5m2!1sen!2sza" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4819153042113!2d27.97832237475544!3d-26.083182977151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574f85e01d351%3A0x87ed84fda25a6c41!2s42nd%20Precinct%20Security!5e0!3m2!1sen!2sza!4v1711624806327!5m2!1sen!2sza"
+						width="800"
+						height="400"
+						style="border:0;"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+						title="Google Map showing the location of 42nd Precinct Security">
+					Your browser does not support iframes. Please visit the map directly at:
+					<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.4819153042113!2d27.97832237475544!3d-26.083182977151314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574f85e01d351%3A0x87ed84fda25a6c41!2s42nd%20Precinct%20Security!5e0!3m2!1sen!2sza!4v1711624806327!5m2!1sen!2sza">
+						Google Map
+					</a>
+				</iframe>
 			</div>
 
 			<br>
@@ -240,26 +296,36 @@
 				<div class="contact-form">
 					<h1>Contact Us</h1>
 					<form id="contactForm">
-						<div class="form-group">
-							<label for="emailSelect">Recipient (choose one):</label>
-							<select id="emailSelect" name="emailSelect" required>
-								<option value="">Select a department to email</option>
-								<option value="info@42ndprecinct.co.za">General Information</option>
-								<option value="sales@42ndprecinct.co.za">Sales Queries</option>
-								<option value="jobs@42ndprecinct.co.za">Job Opportunities</option>
-							</select>
-							<div class="error" id="emailSelectError">Please select an email address.</div>
-						</div>
-						<div class="form-group">
-							<label for="subject">Subject (required):</label>
-							<input type="text" id="subject" name="subject" required>
-						</div>
-						<div class="form-group">
-							<label for="message">Message (required):</label>
-							<textarea id="message" name="message" rows="5" required></textarea>
-						</div>
-						<button class="navbar-contact clickable roboto-medium" type="submit">Submit</button>
+						<fieldset>
+							<legend>Contact Form</legend>
+
+							<div class="form-group">
+								<label for="emailSelect">Recipient (choose one):</label>
+								<select id="emailSelect" name="emailSelect" required aria-describedby="emailSelectError" style="text-align: center;">
+									<option value="">--- Select a department to email ---</option>
+									<option value="info@42ndprecinct.co.za">General Information</option>
+									<option value="sales@42ndprecinct.co.za">Sales Queries</option>
+									<option value="jobs@42ndprecinct.co.za">Job Opportunities</option>
+								</select>
+								<div class="error" id="emailSelectError">Please select an email address.</div>
+							</div>
+
+							<div class="form-group">
+								<label for="subject">Subject (required):</label>
+								<input type="text" id="subject" name="subject" required aria-describedby="subjectError">
+								<div class="error" id="subjectError">Please enter a subject.</div>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Message (required):</label>
+								<textarea id="message" name="message" rows="5" required aria-describedby="messageError"></textarea>
+								<div class="error" id="messageError">Please enter your message.</div>
+							</div>
+
+	<button class="navbar-contact clickable roboto-medium" type="submit">Submit</button>
+  </fieldset>
 					</form>
+
 				</div>
 			</div>
 			<!-- Email Form -->
