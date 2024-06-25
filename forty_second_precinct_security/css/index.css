@@ -713,13 +713,13 @@ svg:hover, svg:active { fill: #faa61a; }
 }
 
 body {
+	width: 98%;
 	margin: 0;
 }
 
 main {
 	margin-left: 5rem;
 	padding: 0;
-	width: 95%;
 }
 
 .navbar {
@@ -727,7 +727,6 @@ main {
 	position: fixed;
 	background-color: var(--bg-primary);
 	transition: width 600ms ease;
-	overflow: scroll;
 }
 
 .navbar-nav {
@@ -830,6 +829,7 @@ main {
 		bottom: 0;
 		width: 100vw;
 		height: 5rem;
+		overflow: scroll;
 	}
 
 	.bottom-spacer {
